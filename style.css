@@ -349,7 +349,7 @@ span {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 1.2rem;
   overflow: hidden;
-  transform: all 0.4s;
+  transition: all 0.4s;
 }
 
 .meal:hover {
@@ -464,4 +464,62 @@ span {
 .recipes-link:active {
   color: #ac6406;
   border-bottom: 2px solid transparent;
+}
+
+/**TESTIMONIALS SECTION**/
+
+.testimonial-section {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.8rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  padding: 1.6rem;
+  gap: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
