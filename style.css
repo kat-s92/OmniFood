@@ -21,7 +21,7 @@ body {
 
 .container {
   max-width: 120rem;
-  padding: 2 3.3rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 
@@ -29,6 +29,10 @@ body {
   display: grid;
   row-gap: 12rem;
   column-gap: 2rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2--cols {
@@ -42,6 +46,10 @@ body {
 
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .primary-heading,
@@ -81,6 +89,7 @@ body {
   line-height: 3.2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 1.8rem;
@@ -91,6 +100,9 @@ body {
   font-weight: 400;
   /* add transition property to original state*/
   transition: all 0.3s;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .primary-btn:link,
@@ -118,17 +130,37 @@ body {
   box-shadow: inset 0 0 0 1.5px #ac6406;
 }
 
+.list {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e88e41;
+}
+
+/*HELPER CLASS*/
+.center-text {
+  text-align: center;
+}
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
 
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
-}
-
-/*HELPER CLASS*/
-.center-text {
-  text-align: center;
 }
 
 /***************************/
@@ -252,7 +284,7 @@ body {
   color: #704103;
 }
 
-span {
+.happy-customer-text span {
   font-weight: 600;
 }
 
@@ -424,25 +456,6 @@ span {
 }
 
 /*DIET LIST*/
-.list {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
-  flex-direction: column;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #e88e41;
-}
 
 .all-recipes {
   text-align: center;
@@ -522,4 +535,289 @@ span {
 
 .gallery-item img:hover {
   transform: scale(1.1);
+}
+
+/**PRICING SECTION**/
+.pricing-section {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 1.1rem;
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-self: flex-end;
+  border: 1px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "Best Value";
+  position: absolute;
+  top: 8%;
+  right: -14%;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #51cf66;
+  color: white;
+  padding: 0.8rem 8.2rem;
+  border-radius: 4px;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #e88e41;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.8rem;
+}
+
+.plan-price span {
+  font-size: 3.2rem;
+  padding-right: 0.6rem;
+  font-weight: 500;
+}
+
+.plan-description {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.sign-up-cta {
+  margin-top: 4.8rem;
+  text-align: center;
+}
+
+/**FEATURES**/
+.feature-icon {
+  color: #e67e22;
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.pricing-details {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/**FEATURES**/
+.cta-section {
+  padding: 4.8rem 0 12.8rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  background-color: #e67e22;
+  border-radius: 1.1rem;
+  overflow: hidden;
+
+  background-image: linear-gradient(to left bottom, #eb984e, #e67e22);
+}
+.cta-text-box {
+  padding: 3.2rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+
+.cta .secondary-heading {
+  color: #45260a;
+  margin-bottom: 2.4rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to left bottom,
+      rgba(235, 151, 78, 0.349),
+      rgba(230, 125, 34, 0.349)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.479);
+}
+
+.cta-form input,
+.cta-form select {
+  background-color: #fcefe4;
+  width: 100%;
+  font-size: 1.8rem;
+  color: inherit;
+  padding: 1.2rem;
+  border-radius: 9px;
+  border-style: none;
+  font-family: inherit;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form .btn {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem 3.2rem;
+  transition: all 0.4s;
+}
+
+.cta-form .btn:hover {
+  background-color: #ffff;
+  color: #45260a;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(119, 89, 89, 0.466);
+}
+
+/**FOOTER**/
+
+.footer {
+  padding: 12rem 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-logo {
+  /*footer-logo is anchor link >inline element
+ needs block element in order to add padding or margin (box model)*/
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-icon ion-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #767676;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  color: #767676;
+  line-height: 1.6rem;
+  margin-top: auto; /*css trick to position element inside of flexbox to the bottom of the flex container*/
+}
+
+.footer-nav-header {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-link {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #767676;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+.footer-nav a:link,
+.footer-nav a:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active {
+  color: #555;
+}
+
+.footer-grid {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }

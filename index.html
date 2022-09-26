@@ -15,17 +15,18 @@
   </head>
   <body>
     <header class="header">
-      <img src="/img/omnifood-logo.png" alt="omnifood logo" class="logo" />
+      <a href="#" class="header-logo">
+        <img src="/img/omnifood-logo.png" alt="omnifood logo" class="logo"
+      /></a>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
-          <li><a class="main-navigation-link" href="#">NAV-LINK</a></li>
-          <li><a class="main-navigation-link" href="#">NAV-LINK</a></li>
-          <li><a class="main-navigation-link" href="#">NAV-LINK</a></li>
-          <li>
-            <a class="main-navigation-link navigation-cta" href="#"
-              >CTA Button</a
-            >
-          </li>
+          <li><a class="main-navigation-link" href="#">How it works</a></li>
+          <li><a class="main-navigation-link" href="#">Meals</a></li>
+          <li><a class="main-navigation-link" href="#">Testimonials</a></li>
+          <li><a class="main-navigation-link" href="#">Pricing</a></li>
+          <a class="main-navigation-link navigation-cta" href="#"
+            >Try a meal plan</a
+          >
         </ul>
       </nav>
     </header>
@@ -256,7 +257,7 @@
         <a href="#" class="recipes-link">See all recipes &rarr;</a>
       </div>
     </section>
-
+    <!--TESTIMONIAL-->
     <section class="testimonial-section">
       <div class="testimonials-container">
         <span class="subheading">Testimonials</span>
@@ -315,23 +316,296 @@
           </figure>
         </div>
       </div>
-
+      <!--GALLERY-->
       <div class="gallery">
-<figure class="gallery-item"><img src="img/gallery/gallery-1.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-2.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-3.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-4.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-5.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-6.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-7.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-8.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-9.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-10.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-11.jpg"/></figure>
-<figure class="gallery-item"><img src="img/gallery/gallery-12.jpg"/></figure>
-
-
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-1.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-2.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-3.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-4.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-5.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-6.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-7.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-8.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-9.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-10.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-11.jpg" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-12.jpg" />
+        </figure>
       </div>
+    </section>
+    <!--PRICING SECTION-->
+    <section class="pricing-section">
+      <div class="container">
+        <div class="container">
+          <span class="subheading">Pricing</span>
+          <h2 class="secondary-heading">Eat well without breaking the bank</h2>
+        </div>
+      </div>
+
+      <div class="container grid grid--2--cols margin-bottom-md">
+        <div class="pricing-plan pricing-plan--starter">
+          <header class="plan-header">
+            <p class="plan-name">Starter</p>
+            <p class="plan-price"><span>$</span>399</p>
+            <p class="plan-description">per month. That's just $13 per meal</p>
+          </header>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>1 meal per day</span>
+            </li>
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>Order between 11am and 9pm</span>
+            </li>
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>Free delivery to you door</span>
+            </li>
+            <li class="list-item">
+              <ion-icon name="close-outline" class="list-icon"></ion-icon>
+              <span></span>
+            </li>
+          </ul>
+          <div class="sign-up-cta">
+            <a href="#" class="btn primary-btn margin-right-sm"
+              >Start Eating Well</a
+            >
+          </div>
+        </div>
+
+        <div class="pricing-plan pricing-plan--complete">
+          <header class="plan-header">
+            <p class="plan-name">Complete</p>
+            <p class="plan-price"><span>$</span>649</p>
+            <p class="plan-description">per month. That's just $11 per meal</p>
+          </header>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span><strong>2 meals</strong> per day</span>
+            </li>
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>Order <strong>24/7</strong></span>
+            </li>
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>Free delivery to you door</span>
+            </li>
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>Get access to the latest recipes</span>
+            </li>
+          </ul>
+          <div class="sign-up-cta">
+            <a href="#" class="btn primary-btn margin-right-sm"
+              >Start Eating Well</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="container grid">
+        <aside class="pricing-details">
+          Prices include all applicable taxes. You can cancel at any time. Both
+          plans inclued the following:
+        </aside>
+      </div>
+
+      <div class="container grid grid--4--cols">
+        <div class="feature">
+          <ion-icon name="infinite-outline" class="feature-icon"></ion-icon>
+          <p class="feature-title">Lorem ipsum</p>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+
+        <div class="feature">
+          <ion-icon name="pause-outline" class="feature-icon"></ion-icon>
+          <p class="feature-title">Lorem ipsum</p>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+
+        <div class="feature">
+          <ion-icon name="leaf-outline" class="feature-icon"></ion-icon>
+          <p class="feature-title">Lorem ipsum</p>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+
+        <div class="feature">
+          <ion-icon name="nutrition-outline" class="feature-icon"></ion-icon>
+          <p class="feature-title">Lorem ipsum</p>
+          <p class="feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--CALL-TO ACTION SECTION-->
+    <section class="cta-section">
+      <div class="container">
+        <!--not using the grid--2--cols here as I want different column sizes, building new grid-->
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="secondary-heading">Your first meal is free</h2>
+            <p class="cta-text">
+              Healthy, tasty and hassle-free meals are waiting for you. Start
+              eating well today. You can cancel or pause anytime. And the first
+              meal is on us!
+            </p>
+            <form class="cta-form" action="#">
+              <!--connect for and id-->
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email" required>Email Address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="select-where"
+                  >Tell us where you heard about us</label
+                >
+                <select id="select-where" required>
+                  <option value="">Please choose an option</option>
+                  <option value="friends">Friends or Family</option>
+                  <option value="youtube">YouTube video</option>
+                  <option value="social-media">Social Media</option>
+                  <option value="promotion">Promottional Email</option>
+                </select>
+              </div>
+              <button class="btn">Sign Up Now</button>
+            </form>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="woman eating food"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container grid footer-grid">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img src="/img/omnifood-logo.png" alt="omnifood logo" class="logo"
+          /></a>
+
+          <ul class="social-links">
+            <li>
+              <a href="#" class="footer-icon"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-icon"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-icon"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2027 by OmniFood Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-nav-header">Contact Us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a href="tel: 415-201-6370" class="footer-link">415-201-6370</a>
+            </p>
+            <p>
+              <a href="mailto:hello@omnifood.com" class="footer-link">
+                hello@omnifood.com
+              </a>
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-nav-header">Account</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Create Account</a></li>
+            <li><a href="#" class="footer-link">Sign in </a></li>
+            <li><a href="#" class="footer-link">iOS App</a></li>
+            <li><a href="#" class="footer-link">Android App</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-nav-header">Company</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">About OmniFood</a></li>
+            <li><a href="#" class="footer-link">For Business</a></li>
+            <li><a href="#" class="footer-link">Cooking Partners</a></li>
+            <li><a href="#" class="footer-link">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-nav-header">Resources</p>
+          <ul class="footer-nav">
+            <li><a href="#" class="footer-link">Recipe Directory</a></li>
+            <li><a href="#" class="footer-link">Help Center</a></li>
+            <li><a href="#" class="footer-link">Privacy Terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
     <script
       type="module"
