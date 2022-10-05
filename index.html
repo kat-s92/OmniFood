@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script defer src="/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -8,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/queries.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,21 +22,35 @@
       /></a>
       <nav class="main-navigation">
         <ul class="main-navigation-list">
-          <li><a class="main-navigation-link" href="#">How it works</a></li>
-          <li><a class="main-navigation-link" href="#">Meals</a></li>
-          <li><a class="main-navigation-link" href="#">Testimonials</a></li>
-          <li><a class="main-navigation-link" href="#">Pricing</a></li>
-          <a class="main-navigation-link navigation-cta" href="#"
+          <li>
+            <a class="main-navigation-link" href="#how-it-works"
+              >How it works</a
+            >
+          </li>
+          <li><a class="main-navigation-link" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-navigation-link" href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li><a class="main-navigation-link" href="#pricing">Pricing</a></li>
+          <a class="main-navigation-link navigation-cta" href="#cta"
             >Try a meal plan</a
           >
         </ul>
       </nav>
+      <!--mobile nav button for smaller screens-->
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
     </header>
     <section class="hero-section">
       <div class="hero">
         <div class="hero-text-box">
           <h1 class="primary-heading">
-            A healthy meal delivered to your door every day
+            A healthy meal delivered to your door
+            <span class="frequency">every day</span>
           </h1>
           <p class="hero-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -42,7 +58,7 @@
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <a href="#" class="btn primary-btn margin-right-sm"
+          <a href="#cta" class="btn primary-btn margin-right-sm"
             >Start Eating Well</a
           >
           <a href="#" class="btn secondary-btn">Learn More &darr;</a>
@@ -77,7 +93,7 @@
       </div>
     </section>
 
-    <section class="section-how">
+    <section class="section-how" id="how-it-works">
       <div class="container">
         <span class="subheading">How it works </span>
         <h2 class="secondary-heading">
@@ -151,7 +167,7 @@
       </div>
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
       <div class="container center-text">
         <span class="subheading">Meals</span>
         <h2 class="secondary-heading">
@@ -258,7 +274,7 @@
       </div>
     </section>
     <!--TESTIMONIAL-->
-    <section class="testimonial-section">
+    <section class="testimonial-section" id="testimonials">
       <div class="testimonials-container">
         <span class="subheading">Testimonials</span>
         <h2 class="secondary-heading">Try it for yourself!</h2>
@@ -357,7 +373,7 @@
       </div>
     </section>
     <!--PRICING SECTION-->
-    <section class="pricing-section">
+    <section class="pricing-section" id="pricing">
       <div class="container">
         <div class="container">
           <span class="subheading">Pricing</span>
@@ -475,7 +491,7 @@
       </div>
     </section>
     <!--CALL-TO ACTION SECTION-->
-    <section class="cta-section">
+    <section class="cta-section" id="cta">
       <div class="container">
         <!--not using the grid--2--cols here as I want different column sizes, building new grid-->
         <div class="cta">

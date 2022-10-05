@@ -1,0 +1,256 @@
+/*BREAK-POINTS
+300px - 500px
+600px - 900px
+900px - 1100px 
+1200px
+
+rem and em do not depend on hmtl font-size in media queries 
+1rem = 1em = 16px 
+*/
+
+/*BELOW 1344px [84em*16px] (Smaller Laptop)*/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .primary-heading {
+    font-size: 4.8rem;
+  }
+}
+
+/*BELOW 1200px [75em*16px] (Landscape Tablet Screen)*/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .secondary-heading {
+    font-size: 3.2rem;
+    margin-bottom: 8.4rem;
+  }
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
+  .grid {
+    row-gap: 7.2rem;
+    column-gap: 3.6rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .main-navigation-list {
+    gap: 3.2rem;
+  }
+  .testimonials-container {
+    padding: 9.6rem 3.8rem;
+  }
+  .testimonials {
+    column-gap: 4.8rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*BELOW 940px [69em*16px] (Smaller Laptop)*/
+
+@media (max-width: 59rem) {
+  html {
+    font-size: 52%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-img {
+    max-width: 60%;
+  }
+  .img-box,
+  .hero-text-box {
+    text-align: center;
+  }
+  .happy-customers {
+    margin-top: 3.2rem;
+    justify-content: center;
+  }
+  .logos img {
+    max-height: 2.4rem;
+  }
+  .step-number {
+    font-size: 6.4rem;
+  }
+  .meal-features-box {
+    padding: 2.4rem 3.2rem 2.4rem 3.2rem;
+  }
+  .testimonial-section {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 3.2rem;
+  }
+  .testimonials-container {
+    padding: 8.6rem 5.2rem 4.2rem 5.2rem;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn {
+    margin-top: 1.8rem;
+  }
+  /*mob nav*/
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .main-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*by default hidden*/
+    /*not using display:none as it does not allow transitions, so we use opacity:0;*/
+    opacity: 0;
+    transition: all 0.5s;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .main-navigation-list {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+  .main-navigation-link:link,
+  .main-navigation-link:visited {
+    font-size: 3.2rem;
+  }
+}
+
+/*BELOW 704px [44em*16px] (Smaller Tablet)*/
+
+@media (max-width: 44rem) {
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diet-list {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .secondary-heading {
+    margin-bottom: 4.8rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .address-col,
+  .logo-col {
+    grid-row: 2;
+    grid-column: span 3;
+    margin-bottom: 3.2rem;
+  }
+}
+
+/*BELOW 544px [34em*16px] (Smaller Tablet)*/
+@media (max-width: 34em) {
+  .grid {
+    gap: 4.8rem;
+  }
+
+  .grid--2--cols,
+  .grid--3--cols,
+  .grid--4--cols {
+    grid-template-columns: 1fr;
+  }
+  .logos img {
+    max-height: 1.2rem;
+  }
+  .hero {
+    padding: 0 3.4rem;
+  }
+
+  .hero-description {
+    margin-bottom: 2.8rem;
+  }
+  .hero-section {
+    padding: 2.4rem 0 4.8rem 0;
+  }
+  .happy-customers {
+    margin-top: 4.8rem;
+  }
+  .happy-customer-text {
+    font-size: 1.4rem;
+  }
+  .hero-img {
+    max-width: 80%;
+  }
+  .section-how {
+    padding-top: 4.8rem;
+  }
+  /*swap places of elemts with nth child
+  nth child of parent container grid grid--2--cols
+  NOT child with the class of .step-img-box*/
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .pricing-details {
+    line-height: 1.8;
+  }
+  .cta-section {
+    padding: 1.8rem;
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-img-box {
+    grid-row: 1;
+    height: 32rem;
+  }
+}

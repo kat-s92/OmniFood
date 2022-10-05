@@ -6,6 +6,9 @@
 
 html {
   font-size: 62.5%;
+  /*doesn't work on Safari
+  scroll-behavior: smooth;
+  */
 }
 
 body {
@@ -28,7 +31,7 @@ body {
 .grid {
   display: grid;
   row-gap: 12rem;
-  column-gap: 2rem;
+  column-gap: 4.8rem;
 }
 
 .grid:not(:last-child) {
@@ -142,6 +145,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  line-height: 1.2;
 }
 
 .list-icon {
@@ -170,7 +174,7 @@ body {
 .main-navigation-list {
   list-style-type: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 .main-navigation-link:link,
@@ -222,6 +226,39 @@ body {
 
 .logo {
   height: 2.2rem;
+}
+
+/*mobile-nav-icons*/
+
+.btn-mobile-nav {
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
+  /*by default we don't want it. Display ONLY at less tha 940px*/
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/*-STICKY NAVIGATION*/
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.97);
 }
 
 /***************************/
@@ -640,7 +677,7 @@ body {
   text-align: center;
 }
 
-/**FEATURES**/
+/**CTA SECTION**/
 .cta-section {
   padding: 4.8rem 0 12.8rem;
 }
@@ -651,7 +688,6 @@ body {
   background-color: #e67e22;
   border-radius: 1.1rem;
   overflow: hidden;
-
   background-image: linear-gradient(to left bottom, #eb984e, #e67e22);
 }
 .cta-text-box {
@@ -679,6 +715,7 @@ body {
     url("../img/eating.jpg");
   background-size: cover;
   background-position: center;
+  max-height: 100%;
 }
 
 .cta-form {
