@@ -247,9 +247,15 @@ body {
   display: none;
 }
 
-/*-STICKY NAVIGATION*/
-.sticky-nav {
+/*-STICKY NAVIGATION
+applied to header when sticky-nav 
+is added to one of it's parent elements aka. body*/
+
+.sticky-nav .header {
   position: fixed;
+  /*^ takes element out of the flow
+  so the page now starts from hero section
+   not header, need to */
   top: 0;
   bottom: 0;
   width: 100%;
@@ -259,6 +265,20 @@ body {
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.97);
+}
+
+/*adding padding to the hero section that accounts for
+header being out of the flow of elements
+
+margin 9.6rem should be added to hero-section when 
+sticky-nav is added to header element.
+
+Hhader is not parent element of hero-section, 
+therefore sticky-nav needs to be added to the body
+*/
+
+.sticky-nav .hero-section {
+  margin-top: 9.6rem;
 }
 
 /***************************/
